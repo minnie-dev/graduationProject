@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jome9.iscl">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA"></uses-permission>
+    <uses-permission android:name="android.permission.READ_OWNER_DATA"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+         <!--서버연결 정상적으로 돌아갈때 사용-->
+
+        <activity android:name=".LoadingActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+
+
+        <!--서버연결안될때 임시 사용
+        <activity android:name=".idtest">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+
+      서버연결안될때 임시 사용-->
+
+
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".DestinationList"/>
+        <activity android:name=".Findbicycle"/>
+        <activity android:name=".Keepbicycle"
+        android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name=".Help"/>
+        <activity android:name=".Ridingrecord"/>
+        <activity android:name=".TransferTm"/>
+        <activity android:name=".Weather"/>
+        <activity android:name=".RegisterActivity"/>
+        <activity android:name=".Keepbicycle_menu" />
+        <activity android:name=".test" />
+        <activity android:name=".help_findway" />
+        <activity android:name=".help_findbicycle" />
+        <activity android:name=".help_keepbicycle" />
+        <activity android:name=".help_weather" />
+        <activity android:name=".help_developerinfo" />
+        <activity android:name=".RidingList" />
+        <activity android:name=".neartest" />
+
+    </application>
+
+</manifest>
